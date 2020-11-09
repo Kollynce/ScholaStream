@@ -16,7 +16,15 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+//Route::get('/courses', function () {
+//    return view('courses');
+//});
+//Route::get('/view', function () {
+//    return view('view');
+//});
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+//Route::get('/home', 'HomeController@index')->name('home');
+Route::resource('/courses', 'CourseController');
+Route::resource('/message', 'MessageController');

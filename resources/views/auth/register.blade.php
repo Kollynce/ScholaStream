@@ -2,8 +2,8 @@
 
 @section('content')
 <div class="container cent">
-    <div class="row justify-content-center register-border col-md-12">
-        <div class="register-bg col-md-6 d-none d-sm-none d-md-block">
+    <div class="row nopadding justify-content-center register-border col-md-12">
+        <div class="register-bg nopadding col-md-6 d-none d-sm-none d-md-block">
 
         </div>
         <div class="col-md-6 p-4">
@@ -60,7 +60,7 @@
                     </div>
 
                     <div class="form-group row mb-0">
-                        <div class="col-md-12">
+                        <div class="col-md-12 pt-3">
                             <button type="submit" class="btn btn-outline-dark rounded-pill button">
                                 {{ __('Register') }}
                             </button>

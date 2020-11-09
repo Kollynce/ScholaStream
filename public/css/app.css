@@ -10888,6 +10888,10 @@ a.text-dark:focus {
   padding: 7px 0px;
 }
 
+.text {
+  font-size: 18px;
+}
+
 .text-light {
   color: #ffffff;
 }
@@ -10909,6 +10913,10 @@ a.text-dark:focus {
   color: #ffffff;
 }
 
+.lead-p {
+  font-size: 20px;
+}
+
 .nav-link {
   font-size: 16px;
 }
@@ -10920,6 +10928,18 @@ b {
 
 .header {
   background-image: linear-gradient(to right, rgba(40, 16, 78, 0.6), rgba(40, 16, 78, 0.6), rgba(40, 16, 78, 0.6)), url(/images/header.jpg?b1f6d85eaee064d36fa6ab24fdccccab);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.message-header {
+  background-image: linear-gradient(to right, rgba(40, 16, 78, 0.6), rgba(40, 16, 78, 0.6), rgba(40, 16, 78, 0.6)), url(/images/text.jpeg?a948867a341190429384383920aad52e);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.courses-header {
+  background-image: linear-gradient(to right, rgba(40, 16, 78, 0.6), rgba(40, 16, 78, 0.6), rgba(40, 16, 78, 0.6)), url(/images/courses.jpg?cf041a96f06dd820454825286f2fd1d0);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -10946,6 +10966,18 @@ b {
   border-color: #9754cb;
 }
 
+.btn-outline-info {
+  font-size: 16px;
+  color: #28104e;
+  border-color: #28104e;
+}
+
+.btn-outline-info:hover {
+  background-color: #28104e;
+  border-color: #28104e;
+  color: #ffffff;
+}
+
 .form-control:focus {
   border-color: #9754cb;
   box-shadow: none;
@@ -10954,7 +10986,7 @@ b {
 
 .login-border {
   align-content: center;
-  height: 553px;
+  height: 505px;
   padding: 0px;
   border-radius: 40px;
   background-image: linear-gradient(to right, rgba(40, 16, 78, 0.4), rgba(40, 16, 78, 0.4), rgba(40, 16, 78, 0.4));
@@ -10962,7 +10994,7 @@ b {
 
 .register-border {
   align-content: center;
-  height: 655px;
+  height: 610px;
   padding: 0px;
   border-radius: 40px;
   background-image: linear-gradient(to right, rgba(40, 16, 78, 0.4), rgba(40, 16, 78, 0.4), rgba(40, 16, 78, 0.4));
@@ -10992,5 +11024,39 @@ b {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.featured {
+  width: auto;
+  padding: 100px 0;
+  background-color: #9754cb;
+}
+
+.row {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.nopadding {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.call-to-action {
+  width: auto;
+  padding: 100px 0;
+}
+
+.pricing {
+  width: auto;
+  padding: 50px 0;
+  background-color: #28104e;
+}
+
+.footer {
+  width: auto;
+  padding: 100px 0;
+  background-color: #9754cb;
+  color: #ffffff;
 }
 

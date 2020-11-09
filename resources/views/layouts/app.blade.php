@@ -18,6 +18,23 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        .text-black-50{
+            color: #000000;
+            font-weight: bolder;
+        }
+        .nopadding{
+            padding: 0!important;
+            margin: 0!important;
+        }
+        .card-horizontal {
+            display: flex;
+            flex: 1 1 auto;
+        }
+
+    </style>
 </head>
 <body>
     <div id="app">
@@ -34,12 +51,12 @@
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
-                            <a class="nav-link ml-5" href="">Courses</a>
+                            <a class="nav-link text-black-50 ml-5" href="/courses">Courses</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link ml-3" href="">About</a>
+                            <a class="nav-link text-black-50 ml-3" href="">About</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item text-black-50">
                             <a class="nav-link ml-3" href="">Contact</a>
                         </li>
                     </ul>
@@ -63,7 +80,11 @@
                                     {{ Auth::user()->name }} <span class="caret"></span>
                                 </a>
 
+
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="{{ url('/message') }}">
+                                       Messages
+                                    </a>
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
@@ -80,8 +101,7 @@
                 </div>
             </div>
         </nav>
-
-        <main class="py-4">
+        <main class="">
             @yield('content')
         </main>
     </div>
